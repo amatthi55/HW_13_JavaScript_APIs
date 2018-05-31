@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belly Button Biodiversity</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Belly Button Dashboard</h1>
+    </div>
+    
+  <select id="selDataset" onchange="optionChanged(this.value)"></select>
+
+  </div>
+
+  <div class = "container">
+    <div id = "sample_meta" class = "col-md-3">  
+
+      
+      <h3> Sample MetaData</h3>
+      
+      <p id= "AGE"></p>
+      <p id= "BBTYPE"></p>
+      <p id="ETHNICITY"></p>
+      <p id="GENDER"></p>
+      <p id="LOCATION"></p>
+      <p id="SAMPLEID"></p>
+      
+
+    </div>
+    
+
+    <div id = "pie" class = "col-md-9">  </div>
+    
+   
+    <div class = "col-md-12">
+    <br>
+    <br>
+    </div>
+
+    <div class = "col-md-12" id = "bubble"></div> 
+    
+  </div>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>

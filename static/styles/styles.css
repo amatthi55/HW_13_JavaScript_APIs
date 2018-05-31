@@ -1,0 +1,21 @@
+body {
+  background-color: grey;
+}
+
+
+h3{
+    text-decoration: underline;
+    
+}
+
+#sample_meta {
+    background-color: white;
+}
+
+
+
+.jumbotron{
+
+    background-color: lightblue;
+    color: darkslategray
+}
